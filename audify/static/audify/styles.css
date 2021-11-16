@@ -1,0 +1,10 @@
+div.progress{
+    height:5px;
+    margin: 0 10px 0 10px;
+}
+.volume-progress{
+    width:100px;
+}
+.play-icons{    
+    margin-top: 2px;
+}
