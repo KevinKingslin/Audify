@@ -10,7 +10,7 @@ from .models import User
 # Create your views here.
 
 def index(request):
-    pass
+    return render(request, "audify/index.html")
 
 def login_view(request):
     if request.method == "POST":
