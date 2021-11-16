@@ -2,3 +2,4 @@
 db.sqlite3
 audify/migrations
 media
+api-key.txt
