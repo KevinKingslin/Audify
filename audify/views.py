@@ -7,9 +7,11 @@ from django.urls import reverse
 from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
 import json
 from .models import User
+from .helpers import search
 # Create your views here.
 
 def index(request):
+    response = search('Taylor Swift')
     return render(request, "audify/index.html")
 
 def login_view(request):
