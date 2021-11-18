@@ -18,7 +18,7 @@ def get_access_token():
     access_token = auth_response_data['access_token']
     return access_token
 
-def search(query):
+def find(query):
     access_token = get_access_token()
     headers = {
         'Authorization': 'Bearer {token}'.format(token=access_token)
