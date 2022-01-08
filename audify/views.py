@@ -8,11 +8,15 @@ from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
 import json
 from .models import User
 from .helpers import find
+
 # Create your views here.
 
 def index(request):
-    response = find('Taylor Swift')
+    response = find('Wildest Dreams')
     return render(request, "audify/index.html")
+
+def search(request):
+    return render(request, "audify/search.html")
 
 def login_view(request):
     if request.method == "POST":
